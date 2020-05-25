@@ -1,7 +1,30 @@
+/* Global Styles */
 .container {
-    padding-top:50px;
+ padding-top:50px;
 }
 
 .card {
     margin-bottom: 10px;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-brand i {margin-right: 10px;}
+
+/* Profile Section */
+.profile-img {
+    height: 150px;
+    width: 150px;
+    background-image: url(images/blank-profile-picture.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
 }
