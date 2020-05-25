@@ -22,9 +22,31 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    margin-right: 25px; 
 }
 
 .profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.profile-info h1 {
+    margin-top: 15px; 
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 401px) {
+
+}
+
+@media only screen and (min-width: 760px) {
+    .profile {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+
+
 }
