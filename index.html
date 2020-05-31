@@ -4,7 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -92,10 +96,12 @@
                 </div>
             </div>
 
+
+            <!-- References -->    
             <div class="col-12 col-md-4">
                 <div class="card">
                     <div class="card-body">
-                      <h4 class="ppl-know-title">People You May Know</h4>
+                      <h4 class="ppl-know-title">My References</h4>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item ppl-know-person">
                             <img src="images/blank-profile-picture.png" />
@@ -114,21 +120,30 @@
                             <img src="images/blank-profile-picture.png" />
                             <p>Lorem ipsum</p>
                         </li>
-                        <li class="list-group-item ppl-know-person">
-                            <img src="images/blank-profile-picture.png" />
-                            <p>Lorem ipsum</p>
-                        </li>
                       </ul>
+                      <button id="newReference">Become a Reference</button>                   
+                      
+                      <div id="dialog" title="Become a Reference">
+                        <p class="validateTips">All form fields are required.</p>
+                       
+                        <form>
+                          <fieldset>
+                            <label for="name">First Name</label>
+                            <input type="text" name="name" id="name" value="Jake" class="text ui-widget-content ui-corner-all">
+                            <label for="email">Last Name</label>
+                            <input type="text" name="email" id="email" value="Smith" class="text ui-widget-content ui-corner-all">
+                            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                          </fieldset>
+                        </form>
+                      </div>
+
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
 </html>
