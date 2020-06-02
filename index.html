@@ -126,15 +126,15 @@
                       <div id="dialog" title="Become a Reference">
                         <p class="validateTips">All form fields are required.</p>
                        
-                        <form>
+                        <form id="reference-form">
                           <fieldset>
-                            <label for="name">First Name</label>
-                            <input type="text" name="name" id="firstname" value="Jake" class="text ui-widget-content ui-corner-all">
-                            <label for="email">Last Name</label>
-                            <input type="text" name="email" id="lastname" value="Smith" class="text ui-widget-content ui-corner-all">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" value="Jake" class="text ui-widget-content ui-corner-all">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" value="Smith" class="text ui-widget-content ui-corner-all">
                             <!-- Allow form submission with keyboard without duplicating the dialog button -->
 
-                            <input type="submit" id="submit" value="Submit" tabindex="-1">
+                            <input type="submit" form="reference-form" id="submit" value="Submit" tabindex="-1">
                           </fieldset>
                         </form>
                       </div>

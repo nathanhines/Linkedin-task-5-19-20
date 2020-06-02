@@ -1,9 +1,7 @@
-$(document).ready(function(){
+
+
+$(document).ready(function(firstname, lastname){
   
-  var firstname = $("#firstname");
-  var lastname = $("#lastname");
-
-
     $(function openModal() {  
 
       // this initializes the dialog 
@@ -19,6 +17,12 @@ $(document).ready(function(){
 
       });
     
+      $("#reference-form").submit(function(){
+        var firstname = document.getElementById("firstname").value;
+        var lastname = document.getElementById("lastname").value;
+
+        console.log(firstname, lastname);
+      });
   
   });
 
