@@ -1,22 +1,20 @@
 
 
-$(document).ready(function(){
+$(document).ready(function(){ 
   
-    $(function openModal() {  
-
+var $dialog = $("#dialog");
       // this initializes the dialog 
-      $("#dialog").dialog({
-      autoOpen : false, modal : true
+      $dialog.dialog({
+      autoOpen : false, modal : true, height : 500
         });
 
       // the onclick handler
       $("#newReference").click(function() {
-        $("#dialog").dialog("open");
+        $dialog.dialog("open");
         $(".validateTips").html("All form fields are required.")
         return false;
         });
 
-      });
     
       $("#reference-form").submit(function(){
         var firstname = document.getElementById("firstname").value;
@@ -31,7 +29,7 @@ $(document).ready(function(){
         } else {
           $('.list-group').append("<li class='list-group-item ppl-know-person'><img src='images/blank-profile-picture.png' /><p>"+firstname+" "+lastname+"</p></li>");
 
-          $("#dialog").dialog("close");
+          $dialog.dialog("close");
           return false
 
         };
