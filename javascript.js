@@ -1,6 +1,12 @@
 
 
 $(document).ready(function(){ 
+
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
   
 var $dialog = $("#dialog");
       // this initializes the dialog 
