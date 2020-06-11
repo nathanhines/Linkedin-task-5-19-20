@@ -107,10 +107,12 @@
 
             </div>
 
+
+            <!-- References -->    
             <div class="col-12 col-md-4">
                 <div class="card">
                     <div class="card-body">
-                      <h4 class="ppl-know-title">People You May Know</h4>
+                      <h4 class="ppl-know-title">My References</h4>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item ppl-know-person">
                             <img src="images/blank-profile-picture.png" />
@@ -129,11 +131,25 @@
                             <img src="images/blank-profile-picture.png" />
                             <p>Lorem ipsum</p>
                         </li>
-                        <li class="list-group-item ppl-know-person">
-                            <img src="images/blank-profile-picture.png" />
-                            <p>Lorem ipsum</p>
-                        </li>
                       </ul>
+                      <button id="newReference">Become a Reference</button>                   
+                      
+                      <div id="dialog" title="Become a Reference">
+                        <p class="validateTips">All form fields are required.</p>
+                       
+                        <form id="reference-form">
+                          <fieldset>
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" class="text ui-widget-content ui-corner-all">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" class="text ui-widget-content ui-corner-all">
+                            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+
+                            <input type="submit" form="reference-form" id="submit" value="Submit" tabindex="-1">
+                          </fieldset>
+                        </form>
+                      </div>
+
                     </div>
                 </div>
             </div>
