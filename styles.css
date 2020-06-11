@@ -53,6 +53,18 @@
     margin-right: 15px;
 }
 
+/* Experience Section */
+.experience-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.company-info {
+    margin: 15px 0px 0px 0px;
+}
+.company-info p {
+    margin: 0px 0px 8px 0px;
+}
 .ppl-know-person p {margin-bottom: 0px;}
 
 /* Media Queries */
@@ -63,6 +75,12 @@
 @media only screen and (min-width: 760px) {
     .profile {
         flex-direction: row;
+    }
+    .experience-item-container {
+        flex-direction: row;
+    }
+    .company-info {
+        margin: 15px 0px 0px 20px;
     }
 }
 
